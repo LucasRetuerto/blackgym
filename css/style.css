@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --animate-duration: 1.5s;
+    --animate-delay: 0.9s;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*Header*/
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul{
+    list-style: none;
+    background-color: #363636;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px;
+    margin: 20px;
+}
+
+nav ul li a:hover{
+    color: blueviolet;
+    cursor: pointer;
+    transition: color 1s ease-out;
+}
+
+/*Home*/
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 92vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/pexels-photo-1552252.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.home h1{
+    color: #fff;
+    font-size: 100px;
+}
+
+.home p{
+    font-size: 50px;
+    color: #ccc;
+    padding: 50px;
+}
+
+.home button{
+    font-size: 50px;
+    background-color: blueviolet;
+    padding: 7px 15px;
+    border-radius: 35px;
+}
+
+.home button:hover{
+    background-color: purple;
+    cursor: pointer;
+    transition: background-color 1s ease-out;
+}
+
+/*About*/
+
+.about{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    background-color: #595966;
+    padding: 50px;
+}
+
+.about .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h2{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.about p{
+    font-size: 20px;
+    padding: 30px;
+}
+
+.about .img-container{
+    background-image: url(../img/pexels-photo-4752861.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 750px;
+    width: 505px;
+    border-radius: 50px;
+    border: 3px solid blueviolet;
+}
+
+.about button{
+    font-size: 40px;
+    background-color: blueviolet;
+    border-radius: 35px;
+    padding: 7px 15px;
+}
+
+.about button:hover{
+    background-color: purple;
+    cursor: pointer;
+    transition: background-color 1s ease-out;
+}
+
+/*Team*/
+
+.team{
+    background-color: #ccc;
+}
+
+.team h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+    color: blueviolet;
+}
+
+.team .coaches{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 10px;
+}
+
+.team p{
+    display: block;
+    margin: 30px;
+}
+
+.team h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+.team .coach{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    height: 600px;
+    color: #fff;
+    text-align: center;
+}
+
+.coach:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/coach1.jpeg);
+}
+
+.coach:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/coach2.jpeg);
+}
+
+.coach:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/coach3.jpeg);
+}
+
+/*Programs*/
+
+.programs h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+    color: purple;
+}
+
+.programs .description{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.programs .training{
+    display: flex;
+    justify-content: center;
+}
+
+.programs h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.training p{
+    display: block;
+    margin: 30px;
+}
+
+.training .typet{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    height: 600px;
+    color: #fff;
+    text-align: center;
+}
+
+.training button{
+    font-size: 40px;
+    background-color: blueviolet;
+    border-radius: 35px;
+    padding: 7px 15px;
+}
+
+.training button:hover{
+    background-color: purple;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 1s ease-out;
+}
+
+.typet:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/crossfit.jpeg);
+}
+
+.typet:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/functional.jpeg);
+}
+
+.typet:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/free-pass.jpeg);
+}
+
+/*Calendar*/
+
+.calendar{
+    background-color: #ccc;
+    padding: 30px;
+}
+
+.calendar h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+.calendar table{
+    text-align: center;
+    border: 1px solid black;
+    margin: 0 auto;
+    background-color: #632432;
+    width: 60%;
+    color: #fff;
+    padding: 30px;
+}
+
+.calendar th, td{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #363636;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h2{
+    font-size: 25px;
+    padding: 30px;
+}
+
+footer a{
+    font-size: 40px;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer a:hover{
+    color: blueviolet;
+    cursor: pointer;
+    transition: color 1s ease-out;
+}
+
+footer p{
+    padding: 30px;
+}
+
+/*Contact*/
+
+.cont-bod{
+    font-family: 'Quicksand', sans-serif;
+    background: #181818;
+    color: #fff;
+    /* padding: 0 64px; */
+    line-height: 1.6;
+}
+
+.content{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 95px;
+    padding: 1.5em;
+}
+
+.logo{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.logo span{
+    color: blueviolet;
+}
+
+.contact-wrapper{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.contact-wrapper > *{
+    padding: 32px;
+}
+
+.contact-form{
+    background-color: #222222;
+}
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block{
+    grid-column: 1 / 3;
+}
+
+.contact-form form p{
+    margin: 0;
+    padding: 16px;
+}
+
+.contact-form form button, 
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 1px solid blueviolet;
+}
+
+.contact-form form button{
+    background: blueviolet;
+    border: none;
+    padding: 1em;
+    color: #000;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus{
+    background: purple;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: none;
+    cursor: pointer;
+}
+
+.contact-info{
+    background: #000;
+}
+
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+    padding: 16px;
+    text-align: left;
+}
+
+.contact-info ul{
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li{
+    padding: 6px;
+}
+
+/*Media queries*/
+
+@media only screen and (max-width: 576px){
+    /*Header*/
+
+    nav ul{
+        height: 40px;
+    }
+
+    nav ul li a{
+        font-size: 14px;
+        margin: 0;
+        padding: 25px;
+    }
+
+    /*About*/
+
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about .texto{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .about h2{
+        margin: 0;
+    }
+    
+    .about .img-container{
+        display: none;
+    }
+
+    /*Team*/
+
+    .team .coaches{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /*Programs*/
+
+    .programs .training{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Footer*/
+
+    footer p{
+        margin: 0;
+        padding: 30px 0 0 0;
+    }
+
+    footer h2{
+        padding-right: 0;
+    }
+
+    /*Contact*/
+
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+}
