@@ -368,7 +368,7 @@ footer p{
 .cont-bod{
     font-family: 'Quicksand', sans-serif;
     background: rgb(24,24,24);
-    background: linear-gradient(180deg, rgba(24,24,24,1) 66%, rgba(204,204,204,1) 100%, rgba(204,204,204,1) 100%, rgba(204,204,204,1) 100%, rgba(204,204,204,1) 100%);
+    background: linear-gradient(180deg, rgba(24,24,24,1) 66%, rgba(205,205,205,1) 100%, rgba(204,204,204,1) 100%, rgba(204,204,204,1) 100%, rgba(204,204,204,1) 100%);
     color: #fff;
     /* padding: 0 64px; */
     line-height: 1.6;
