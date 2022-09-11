@@ -96,7 +96,8 @@ nav ul li a:hover{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    background-color: #595966;
+    background: rgb(187,187,200);
+    background: linear-gradient(225deg, rgba(187,187,200,1) 44%, rgba(38,38,38,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
     padding: 50px;
 }
 
@@ -147,7 +148,8 @@ nav ul li a:hover{
 /*Team*/
 
 .team{
-    background-color: #ccc;
+    background: rgb(89,89,102);
+    background: linear-gradient(135deg, rgba(89,89,102,1) 44%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
 }
 
 .team h2{
@@ -214,6 +216,11 @@ nav ul li a:hover{
 }
 
 /*Programs*/
+
+.programs{
+    background: rgb(187,187,200);
+    background: linear-gradient(225deg, rgba(187,187,200,1) 44%, rgba(38,38,38,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+}
 
 .programs h2{
     font-size: 40px;
@@ -299,7 +306,8 @@ nav ul li a:hover{
 /*Calendar*/
 
 .calendar{
-    background-color: #ccc;
+    background: rgb(89,89,102);
+    background: linear-gradient(135deg, rgba(89,89,102,1) 44%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
     padding: 30px;
 }
 
@@ -359,7 +367,8 @@ footer p{
 
 .cont-bod{
     font-family: 'Quicksand', sans-serif;
-    background: #181818;
+    background: rgb(24,24,24);
+    background: linear-gradient(180deg, rgba(24,24,24,1) 66%, rgba(204,204,204,1) 100%, rgba(204,204,204,1) 100%, rgba(204,204,204,1) 100%, rgba(204,204,204,1) 100%);
     color: #fff;
     /* padding: 0 64px; */
     line-height: 1.6;
