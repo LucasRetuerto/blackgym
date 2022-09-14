@@ -169,6 +169,11 @@ nav ul li a:hover{
 .team p{
     display: block;
     margin: 30px;
+    color: #fff;
+}
+
+.team h5{
+    color: #fff;
 }
 
 .team h3{
@@ -186,6 +191,15 @@ nav ul li a:hover{
     height: 600px;
     color: #fff;
     text-align: center;
+}
+
+.team .coach-img{
+    height: 650px;
+    border-radius: 20px;
+}
+
+.team .card-description{
+    background-color: rgb(48, 45, 45);
 }
 
 .coach:first-child{
