@@ -23,11 +23,11 @@ header{
     z-index: 1;
 }
 
-nav ul{
+nav{
     list-style: none;
     background-color: #363636;
     display: flex;
-    height: 80px;
+    height: 40px;
     justify-content: center;
     align-items: center;
 }
@@ -44,6 +44,29 @@ nav ul li a:hover{
     color: blueviolet;
     cursor: pointer;
     transition: color 1s ease-out;
+}
+
+.nav-pills .nav-link.active{
+    background-color: blueviolet;
+    height: 40px;
+}
+
+.nav-pills .nav-link.active:hover{
+    background-color: purple;
+    transition: background-color 1s ease-out;
+}
+
+.nav-link{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+    color: #fff;
+    transition: color 1s ease-out;
+    height: 40px;
 }
 
 /*Home*/
@@ -169,6 +192,7 @@ nav ul li a:hover{
 .team p{
     display: block;
     margin: 30px;
+    color: #fff;
 }
 
 .team h5{
@@ -191,6 +215,26 @@ nav ul li a:hover{
     color: #fff;
     text-align: center;
 }
+
+.team .coach-img{
+    height: 650px;
+    border-radius: 20px;
+}
+
+.team .card-description{
+    background-color: rgb(48, 45, 45);
+    border-radius: 20px;
+}
+
+.team-container{
+    background-color: transparent;
+    border: none;
+}
+
+.card-foot{
+    color: #fff!important;
+}
+
 
 .coach:first-child{
     background-image: linear-gradient(

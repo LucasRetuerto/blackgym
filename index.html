@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -12,16 +13,14 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#programs">Programs</a></li>
-                <li><a href="#calendar">Calendar</a></li>
-                <li><a href="./pages/contact.html" target="_blank">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="nav nav-pills nav-fill">
+        <a class="nav-link active nav-activo" aria-current="page" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#team">Team</a>
+        <a class="nav-link" href="#programs">Programs</a>
+        <a class="nav-link" href="#calendar">Calendar</a>
+        <a class="nav-link" href="./pages/contact.html" target="_blank">Contact</a>
+      </nav>
     </header>
 
     <section id="home" class="home">
@@ -40,22 +39,44 @@
     </section>
 
     <section id="team" class="team">
-        <h2>Our Team</h2>
-        <div class="coaches">
-            <div class="coach" data-aos="zoom-in-down" data-aos-duration="1500">
-                <h3>Nombre Coach</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consectetur illo neque, modi explicabo ipsam ad obcaecati, architecto!</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 team-container">
+                <img src="./img/coach1.jpeg" class="card-img-top coach-img" alt="...">
+                <div class="card-body card-description">
+                  <h5 class="card-title">Nombre Coach</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptatum earum voluptas at dicta corporis modi totam pariatur quos distinctio inventore magnam amet libero iste, accusantium magni. Ipsum, quod assumenda?</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted card-foot">Crossfit Specialist</small>
+                </div>
+              </div>
             </div>
-            <div class="coach" data-aos="zoom-in-down" data-aos-duration="1500">
-                <h3>Nombre Coach</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugiat quisquam natus exercitationem rerum at, dolores voluptate doloribus distinctio qu</p>
+            <div class="col">
+              <div class="card h-100 team-container">
+                <img src="./img/coach2.jpeg" class="card-img-top coach-img" alt="...">
+                <div class="card-body card-description">
+                  <h5 class="card-title">Nombre Coach</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad adipisci optio et illo, modi ab doloremque error ex sed ipsam nostrum repellendus tempora, cumque ducimus atque excepturi earum suscipit aperiam.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted card-foot">Nutritionist</small>
+                </div>
+              </div>
             </div>
-            <div class="coach" data-aos="zoom-in-down" data-aos-duration="1500">
-                <h3>Nombre Coach</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere omnis dolorem soluta. Sed illum, voluptatum ex inventore quas cumque amet repellat estis.</p>
+            <div class="col">
+              <div class="card h-100 team-container">
+                <img src="./img/coach3.jpeg" class="card-img-top coach-img" alt="...">
+                <div class="card-body card-description">
+                  <h5 class="card-title">Nombre Coach</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod numquam in tempore ipsum qui eum cum minus sunt atque, optio placeat ipsa velit obcaecati pariatur cupiditate. Excepturi vero omnis minus?</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted card-foot">Functional Leader</small>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
+          </div>
 
     <section id="programs" class="programs">
         <h2>Our Programs</h2>
