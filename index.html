@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -12,135 +11,114 @@
     <title>BlackGym</title>
 </head>
 <body>
-    <header>
-      <nav class="nav nav-pills nav-fill">
-        <a class="nav-link active nav-activo" aria-current="page" href="#home">Home</a>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#team">Team</a>
-        <a class="nav-link" href="#programs">Programs</a>
-        <a class="nav-link" href="#calendar">Calendar</a>
-        <a class="nav-link" href="./pages/contact.html" target="_blank">Contact</a>
+  <header>
+      <nav>
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#programs">Programs</a></li>
+              <li><a href="#calendar">Calendar</a></li>
+              <li><a href="./pages/contact.html" target="_blank">Contact</a></li>
+          </ul>
       </nav>
-    </header>
+  </header>
 
-    <section id="home" class="home">
-        <h1 class="animate__animated animate__backInDown">BlackGym</h1>
-        <p class="animate__animated animate__backInUp">Overcome your limits</p>
-        <button>Train Now!</button>
-    </section>
+  <section id="home" class="home">
+      <h1 class="animate__animated animate__backInDown">BlackGym</h1>
+      <p class="animate__animated animate__backInUp">Overcome your limits</p>
+      <button>Train Now!</button>
+  </section>
 
-    <section id="about" class="about">
-        <div class="img-container" data-aos="zoom-in-left" data-aos-duration="1500"></div>
-        <div class="texto" data-aos="zoom-in-right" data-aos-duration="1500">
-            <h2>Welcome to BlackGym</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quidem maiores aliquam, nesciunt quas explicabo animi delectus in illo enim temporibus provident labore asperiores? Blanditiis quos cumque libero minus delectus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas necessitatibus ratione et enim doloremque provident laboriosam aspernatur error quaerat eum, itaque nisi dolorem, iste, repudiandae quas excepturi distinctio exercitationem hic? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates suscipit aut enim, eligendi magni consequuntur iste ut esse, omnis labore, quae vel ex ipsa! Beatae doloremque sit sed nulla voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa enim deserunt voluptate eaque perferendis mollitia, similique, ab delectus quia ipsum, numquam ratione animi esse explicabo repellat autem. Aliquid, vero accusamus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis necessitatibus blanditiis mollitia labore nulla, cumque quibusdam molestiae sequi corporis corrupti quod magni sint illo exercitationem minima explicabo rerum qui aut!</p>
-            <button>READ MORE</button>
-        </div>
-    </section>
+  <section id="about" class="about">
+      <div class="img-container" data-aos="zoom-in-left" data-aos-duration="1500"></div>
+      <div class="texto" data-aos="zoom-in-right" data-aos-duration="1500">
+          <h2>Welcome to BlackGym</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quidem maiores aliquam, nesciunt quas explicabo animi delectus in illo enim temporibus provident labore asperiores? Blanditiis quos cumque libero minus delectus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas necessitatibus ratione et enim doloremque provident laboriosam aspernatur error quaerat eum, itaque nisi dolorem, iste, repudiandae quas excepturi distinctio exercitationem hic? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates suscipit aut enim, eligendi magni consequuntur iste ut esse, omnis labore, quae vel ex ipsa! Beatae doloremque sit sed nulla voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa enim deserunt voluptate eaque perferendis mollitia, similique, ab delectus quia ipsum, numquam ratione animi esse explicabo repellat autem. Aliquid, vero accusamus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis necessitatibus blanditiis mollitia labore nulla, cumque quibusdam molestiae sequi corporis corrupti quod magni sint illo exercitationem minima explicabo rerum qui aut!</p>
+          <button>READ MORE</button>
+      </div>
+  </section>
 
-    <section id="team" class="team">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100 team-container">
-                <img src="./img/coach1.jpeg" class="card-img-top coach-img" alt="...">
-                <div class="card-body card-description">
-                  <h5 class="card-title">Nombre Coach</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptatum earum voluptas at dicta corporis modi totam pariatur quos distinctio inventore magnam amet libero iste, accusantium magni. Ipsum, quod assumenda?</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted card-foot">Crossfit Specialist</small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 team-container">
-                <img src="./img/coach2.jpeg" class="card-img-top coach-img" alt="...">
-                <div class="card-body card-description">
-                  <h5 class="card-title">Nombre Coach</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad adipisci optio et illo, modi ab doloremque error ex sed ipsam nostrum repellendus tempora, cumque ducimus atque excepturi earum suscipit aperiam.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted card-foot">Nutritionist</small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 team-container">
-                <img src="./img/coach3.jpeg" class="card-img-top coach-img" alt="...">
-                <div class="card-body card-description">
-                  <h5 class="card-title">Nombre Coach</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod numquam in tempore ipsum qui eum cum minus sunt atque, optio placeat ipsa velit obcaecati pariatur cupiditate. Excepturi vero omnis minus?</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted card-foot">Functional Leader</small>
-                </div>
-              </div>
-            </div>
+  <section id="team" class="team">
+      <h2>Our Team</h2>
+      <div class="coaches">
+          <div class="coach" data-aos="zoom-in-down" data-aos-duration="1500">
+              <h3>Nombre Coach</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consectetur illo neque, modi explicabo ipsam ad obcaecati, architecto!</p>
           </div>
+          <div class="coach" data-aos="zoom-in-down" data-aos-duration="1500">
+              <h3>Nombre Coach</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugiat quisquam natus exercitationem rerum at, dolores voluptate doloribus distinctio qu</p>
+          </div>
+          <div class="coach" data-aos="zoom-in-down" data-aos-duration="1500">
+              <h3>Nombre Coach</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere omnis dolorem soluta. Sed illum, voluptatum ex inventore quas cumque amet repellat estis.</p>
+          </div>
+      </div>
+  </section>
 
-    <section id="programs" class="programs">
-        <h2>Our Programs</h2>
-        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laborum libero natus esse ducimus nobis ullam reprehenderit voluptas! Obcaecati quisquam molestiae ad repellendus animi nihil sit, incidunt odit ex quod!</p>
-        <div class="training" data-aos="zoom-in-up" data-aos-duration="1500">
-            <div class="typet">
-                <h3>CROSSFIT</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum fugiat ratione iste fugit molestiae quasi maiores itaque. Expedita ab repellendus est ut ex dolor quis dicta. Nemo laborum totam praesentium?</p>
-                <button>+INFO</button>
-            </div>
-            <div class="typet">
-                <h3>FUNCTIONAL</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero unde porro odio voluptatibus, quas doloribus corporis eligendi doloremque mollitia distinctio repellat aliquam, dolorem ipsum minus exercitationem recusandae, eos id. Quae.</p>
-                <button>+INFO</button>
-            </div>
-            <div class="typet">
-                <h3>FREE PASS</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam minima neque tempora. Neque illum sint similique quisquam. Deleniti necessitatibus ipsum inventore architecto quam, facere corrupti officiis magni commodi doloremque atque.</p>
-                <button>+INFO</button>
-            </div>
-        </div>
-    </section>
+  <section id="programs" class="programs">
+      <h2>Our Programs</h2>
+      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laborum libero natus esse ducimus nobis ullam reprehenderit voluptas! Obcaecati quisquam molestiae ad repellendus animi nihil sit, incidunt odit ex quod!</p>
+      <div class="training" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="typet">
+              <h3>CROSSFIT</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum fugiat ratione iste fugit molestiae quasi maiores itaque. Expedita ab repellendus est ut ex dolor quis dicta. Nemo laborum totam praesentium?</p>
+              <button>+INFO</button>
+          </div>
+          <div class="typet">
+              <h3>FUNCTIONAL</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero unde porro odio voluptatibus, quas doloribus corporis eligendi doloremque mollitia distinctio repellat aliquam, dolorem ipsum minus exercitationem recusandae, eos id. Quae.</p>
+              <button>+INFO</button>
+          </div>
+          <div class="typet">
+              <h3>FREE PASS</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam minima neque tempora. Neque illum sint similique quisquam. Deleniti necessitatibus ipsum inventore architecto quam, facere corrupti officiis magni commodi doloremque atque.</p>
+              <button>+INFO</button>
+          </div>
+      </div>
+  </section>
 
-    <section id="calendar" class="calendar">
-        <h2>Calendar</h2>
-        <table data-aos="zoom-in-down" data-aos-duration="1500">
-            <tr>
-                <td><strong>Class</strong></td>
-                <td><strong>Day</strong></td>
-                <td><strong>Schedule</strong></td>
-            </tr>
+  <section id="calendar" class="calendar">
+      <h2>Calendar</h2>
+      <table data-aos="zoom-in-down" data-aos-duration="1500">
+          <tr>
+              <td><strong>Class</strong></td>
+              <td><strong>Day</strong></td>
+              <td><strong>Schedule</strong></td>
+          </tr>
 
-            <tr>
-                <td>Crossfit</td>
-                <td>Monday, Wednesday, Friday</td>
-                <td>10:00- 15:00- 20:00</td>
-            </tr>
+          <tr>
+              <td>Crossfit</td>
+              <td>Monday, Wednesday, Friday</td>
+              <td>10:00- 15:00- 20:00</td>
+          </tr>
 
-            <tr>
-                <td>Functional</td>
-                <td>Tuesday, Thursday, Saturday</td>
-                <td>09:00- 15:30- 19:00</td>
-            </tr>
+          <tr>
+              <td>Functional</td>
+              <td>Tuesday, Thursday, Saturday</td>
+              <td>09:00- 15:30- 19:00</td>
+          </tr>
 
-            <tr>
-                <td>Free Pass</td>
-                <td>All Week</td>
-                <td>08:00 to 22:00</td>
-            </tr>
-        </table>
-    </section>
+          <tr>
+              <td>Free Pass</td>
+              <td>All Week</td>
+              <td>08:00 to 22:00</td>
+          </tr>
+      </table>
+  </section>
 
-    <footer>
-        <h2>Follow BlackGym</h2>
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <p>&#169 BlackGym Copyright</p>
-    </footer>
+  <footer>
+      <h2>Follow BlackGym</h2>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <p>&#169 BlackGym Copyright</p>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
 </body>
 </html>
