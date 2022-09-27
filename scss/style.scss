@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "partials/variables";
 
 :root {
     --animate-duration: 1.5s;
@@ -37,7 +38,7 @@ header{
                 margin: 20px;
             }
             a:hover{
-                color: blueviolet;
+                color: $hover-color;
                 cursor: pointer;
                 transition: color 1s ease-in-out;
             }
@@ -79,7 +80,7 @@ header{
         border-radius: 35px;
     }
     button:hover{
-        background-color: purple;
+        background-color: $hover-color;
         color: #fff;
         cursor: pointer;
         transition: background-color 1s ease-out;
@@ -107,7 +108,8 @@ header{
         h2{
             margin-top: 0px;
             margin-bottom: 30px;
-            font-size: 40px;
+            font-size: $h2-fs;
+            color: $subtitle-color;
         }
         p{
             font-size: 20px;
@@ -120,7 +122,7 @@ header{
             padding: 7px 15px;
         }
         button:hover{
-            background-color: purple;
+            background-color: $hover-color;
             color: #fff;
             cursor: pointer;
             transition: background-color 1s ease-out;
@@ -144,10 +146,10 @@ header{
     background: rgb(89,89,102);
     background: linear-gradient(135deg, rgba(89,89,102,1) 44%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
     h2{
-        font-size: 40px;
+        font-size: $h2-fs;
         text-align: center;
         padding: 40px;
-        color: blueviolet;
+        color: $subtitle-color;
     }
     .coaches{
         display: grid;
@@ -206,10 +208,10 @@ header{
     background: rgb(187,187,200);
     background: linear-gradient(225deg, rgba(187,187,200,1) 44%, rgba(38,38,38,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
     h2{
-        font-size: 40px;
+        font-size: $h2-fs;
         text-align: center;
         padding: 40px;
-        color: purple;
+        color: $subtitle-color;
     }
     .description{
         text-align: center;
@@ -244,7 +246,7 @@ header{
                 padding: 7px 15px;
             }
             button:hover{
-                background-color: purple;
+                background-color: $hover-color;
                 cursor: pointer;
                 color: #fff;
                 transition: background-color 1s ease-out;
@@ -284,9 +286,10 @@ header{
     background: linear-gradient(135deg, rgba(89,89,102,1) 44%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
     padding: 30px;
     h2{
-        font-size: 40px;
+        font-size: $h2-fs;
         text-align: center;
         padding: 10px;
+        color: $subtitle-color;
     }
     table{
         text-align: center;
@@ -310,7 +313,7 @@ footer{
     height: auto;
     display: flex;
     justify-content: space-between;
-    h2{
+    h3{
         font-size: 25px;
         padding: 30px;
     }
@@ -321,7 +324,7 @@ footer{
         text-align: center;
     }
     a:hover{
-        color: blueviolet;
+        color: $hover-color;
         cursor: pointer;
         transition: color 1s ease-out;
     }
@@ -384,7 +387,7 @@ footer{
                         color: #000;
                     }
                     button:hover, button:focus{
-                        background: purple;
+                        background: $hover-color;
                         color: #fff;
                         transition: background-color 1s ease-out;
                         transition: color 1s ease-in-out;
