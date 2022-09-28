@@ -1,0 +1,28 @@
+$subtitle-color: blueviolet;
+$hover-color: purple;
+$h2-fs: 40px;
+
+.calendar{
+    background: rgb(89,89,102);
+    background: linear-gradient(135deg, rgba(89,89,102,1) 44%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+    padding: 30px;
+    h2{
+        font-size: $h2-fs;
+        text-align: center;
+        padding: 10px;
+        color: $subtitle-color;
+    }
+    table{
+        text-align: center;
+        border: 1px solid black;
+        margin: 0 auto;
+        background-color: #632432;
+        width: 60%;
+        color: #fff;
+        padding: 30px;
+        th,td{
+            border: 1px solid black;
+            padding: 20px;
+        }
+    }
+}

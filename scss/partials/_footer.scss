@@ -1,0 +1,28 @@
+$subtitle-color: blueviolet;
+$hover-color: purple;
+$h2-fs: 40px;
+
+footer{
+    background-color: #363636;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    h3{
+        font-size: 25px;
+        padding: 30px;
+    }
+    a{
+        font-size: 40px;
+        color: white;
+        padding: 30px;
+        text-align: center;
+    }
+    a:hover{
+        color: $hover-color;
+        cursor: pointer;
+        transition: color 1s ease-out;
+    }
+    p{
+        padding: 30px;
+    }
+}

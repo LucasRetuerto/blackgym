@@ -1,0 +1,63 @@
+$subtitle-color: blueviolet;
+$hover-color: purple;
+$h2-fs: 40px;
+
+.team{
+    background: rgb(89,89,102);
+    background: linear-gradient(135deg, rgba(89,89,102,1) 44%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+    h2{
+        font-size: $h2-fs;
+        text-align: center;
+        padding: 40px;
+        color: $subtitle-color;
+    }
+    .coaches{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 10px;
+        .coach{
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            background-position: center center;
+            background-size: cover;
+            padding: 50px;
+            margin: 20px;
+            border-radius: 15px;
+            height: 600px;
+            color: #fff;
+            text-align: center;
+            h3{
+                font-size: 30px;
+                text-align: center;
+            }
+            p{
+                display: block;
+                margin: 30px;
+            }
+        }
+        .coach:first-child{
+            background-image: linear-gradient(
+                0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../img/coach1.jpeg);
+        }
+        .coach:nth-child(2){
+            background-image: linear-gradient(
+                0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../img/coach2.jpeg);
+        }
+        .coach:nth-child(3){
+            background-image: linear-gradient(
+                0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../img/coach3.jpeg);
+        }
+    }
+}
