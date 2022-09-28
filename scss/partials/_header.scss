@@ -9,7 +9,7 @@ header{
     nav{
         ul{
             list-style: none;
-            background-color: #363636;
+            background-color: map-get($map: colors, $key: footer-bg);
             display: flex;
             height: 80px;
             justify-content: center;
@@ -22,7 +22,7 @@ header{
                 margin: 20px;
             }
             a:hover{
-                color: $hover-color;
+                color: map-get($map: colors, $key: hover-color);
                 cursor: pointer;
                 transition: color 1s ease-in-out;
             }

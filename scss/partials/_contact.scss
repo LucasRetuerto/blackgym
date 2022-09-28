@@ -4,8 +4,8 @@ $h2-fs: 40px;
 
 .cont-bod{
     font-family: 'Quicksand', sans-serif;
-    background: rgb(24,24,24);
-    background: linear-gradient(180deg, rgba(24,24,24,1) 66%, rgba(205,205,205,1) 100%, rgba(204,204,204,1) 100%, rgba(204,204,204,1) 100%, rgba(204,204,204,1) 100%);
+    background: map-get($map: colors, $key: contact-bg);
+    background: map-get($map: colors, $key: contact-bg-gradient);
     color: #fff;
     line-height: 1.6;
     .content{
@@ -54,7 +54,7 @@ $h2-fs: 40px;
                         color: #000;
                     }
                     button:hover, button:focus{
-                        background: $hover-color;
+                        background: map-get($map: colors, $key: hover-color);
                         color: #fff;
                         transition: background-color 1s ease-out;
                         transition: color 1s ease-in-out;

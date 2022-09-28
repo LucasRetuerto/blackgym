@@ -3,14 +3,14 @@ $hover-color: purple;
 $h2-fs: 40px;
 
 .calendar{
-    background: rgb(89,89,102);
-    background: linear-gradient(135deg, rgba(89,89,102,1) 44%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+    background: map-get($map: colors, $key: team-cal-bg);
+    background: map-get($map: colors, $key: team-cal-bg-gradient);
     padding: 30px;
     h2{
         font-size: $h2-fs;
         text-align: center;
         padding: 10px;
-        color: $subtitle-color;
+        color: map-get($map: colors, $key: subtitle-color);
     }
     table{
         text-align: center;

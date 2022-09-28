@@ -34,7 +34,7 @@ $h2-fs: 40px;
         border-radius: 35px;
     }
     button:hover{
-        background-color: $hover-color;
+        background-color: map-get($map: colors, $key: hover-color);
         color: #fff;
         cursor: pointer;
         transition: background-color 1s ease-out;

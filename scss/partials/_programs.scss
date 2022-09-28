@@ -3,13 +3,13 @@ $hover-color: purple;
 $h2-fs: 40px;
 
 .programs{
-    background: rgb(187,187,200);
-    background: linear-gradient(225deg, rgba(187,187,200,1) 44%, rgba(38,38,38,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+    background: map-get($map: colors, $key: about-prog-bg);
+    background: map-get($map: colors, $key: about-prog-bg-gradient);
     h2{
         font-size: $h2-fs;
         text-align: center;
         padding: 40px;
-        color: $subtitle-color;
+        color: map-get($map: colors, $key: subtitle-color);
     }
     .description{
         text-align: center;
@@ -44,7 +44,7 @@ $h2-fs: 40px;
                 padding: 7px 15px;
             }
             button:hover{
-                background-color: $hover-color;
+                background-color: map-get($map: colors, $key: hover-color);
                 cursor: pointer;
                 color: #fff;
                 transition: background-color 1s ease-out;
